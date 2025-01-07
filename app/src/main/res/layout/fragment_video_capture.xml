@@ -1,0 +1,72 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CameraFragment">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/videoTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/time_default_00_00"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/timer_background"
+            android:padding="8dp"
+            android:visibility="gone"
+        tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/goPhotoBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/go_to_video_capture"
+            android:src="@drawable/ic_photo_camera" />
+
+        <ImageView
+            android:id="@+id/videoCaptureBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/take_photo"
+            android:src="@drawable/ic_start_video" />
+
+        <ImageButton
+            android:id="@+id/switchBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/switch_camera"
+            android:src="@drawable/ic_swith_camera" />
+
+        <ImageButton
+            android:id="@+id/galleryBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/open_gallery"
+            android:src="@drawable/ic_gallery" />
+    </RelativeLayout>
+
+</layout>

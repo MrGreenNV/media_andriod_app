@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GreenApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_video_capture">go to video capture</string>
+    <string name="take_photo">take photo</string>
+    <string name="switch_camera">switch camera</string>
+    <string name="open_gallery">open gallery</string>
+    <string name="time_default_00_00">00:00</string>
+    <string name="image_view">image view</string>
+    <string name="video_icon">video icon</string>
+    <string name="back">back</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="delete_file">Удалить файл</string>
+</resources>
