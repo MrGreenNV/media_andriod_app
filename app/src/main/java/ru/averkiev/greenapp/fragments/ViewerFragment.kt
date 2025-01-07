@@ -79,18 +79,15 @@ class ViewerFragment : Fragment() {
     }
 
     private fun navigateToMedia(position: Int) {
-        // Получаем URI и тип медиафайла по индексу
         val mediaUri = mediaFiles[position].first
         val mediaType = mediaFiles[position].second
 
-        // Используем action для навигации, передавая URI, тип и позицию
         val action = ViewerFragmentDirections.actionViewerFragmentSelf(
             mediaUri.toString(),
             mediaType,
             position
         )
 
-        // Переходим по action
         findNavController().navigate(action)
     }
 

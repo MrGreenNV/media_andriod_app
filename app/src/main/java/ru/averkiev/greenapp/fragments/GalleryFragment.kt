@@ -17,8 +17,6 @@ class GalleryFragment : Fragment() {
     private var _binding: FragmentGalleryBinding? = null
     private val binding get() = _binding ?: throw Exception("FragmentGalleryBinding is null")
 
-    private lateinit var galleryAdapter: GalleryAdapter
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
